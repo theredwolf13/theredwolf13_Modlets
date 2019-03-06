@@ -1,0 +1,8 @@
+<configs>
+
+<append xpath="/blocks/block[@name='treeMaster']">
+	<property name="FallOver" value="false" />
+	
+</append>
+	
+</configs>
