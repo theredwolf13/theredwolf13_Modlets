@@ -5,7 +5,7 @@
 	<set xpath="/traders/trader_info[@id='1']/@max_inventory">100</set>
 	<set xpath="/traders/trader_info[@id='1']/@min_items_swapped">40</set>
 	<set xpath="/traders/trader_info[@id='1']/@max_items_swapped">100</set>
-    <set xpath="/traders/trader_info[@id='1']/@open_time">0:00</set>
+ 	<set xpath="/traders/trader_info[@id='1']/@open_time">0:00</set>
 	<set xpath="/traders/trader_info[@id='1']/@close_time">0:00</set>
 	
 	<set xpath="/traders/trader_info[@id='3']/@reset_interval">1</set>
