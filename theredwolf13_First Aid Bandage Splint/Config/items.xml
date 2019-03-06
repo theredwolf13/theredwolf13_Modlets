@@ -1,0 +1,81 @@
+<configs>
+	
+<append xpath="/items">
+	
+<item name="medicalFirstAidBandageSplint">
+	<property name="CustomIcon" value="medicalFirstAidBandage"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
+	<property name="DisplayType" value="medical"/>
+	<property name="HoldType" value="16"/>
+	<property name="Meshfile" value="Items/Health/gauze"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="FuelValue" value="50"/>
+	<property name="Weight" value="10"/>
+	<property name="Group" value="Science,Basics"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="Stacknumber" value="30000"/>
+	<property name="ActionSkillGroup" value="Medicine"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="CraftingIngredientExp" value="5"/>
+	<property name="PickupJournalEntry" value="firstAidTip"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_bandage"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_bandage"/>
+	</property>
+	<effect_group tiered="false">
+		<!-- used on self -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="maxHealthAmount" operation="add" value="50"/> 
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="maxHealthIncrease" operation="set" value="@medicPerkIncrease"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="medicalHealthAmount" operation="add" value="60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="healthIncrease" operation="set" value="@healthPerkIncrease"/>
+		<display_value name="foodHealthAmount" value="60" />
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffInjuryBleeding"/>
+		<!-- used on other -->
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthAmount" operation="add" value="50"/> 
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthIncrease" operation="set" value="2.50">
+			<requirement name="CVarCompare" target="self" cvar="maxHealthIncrease" operation="Equals" value="2.50"/> </triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthIncrease" operation="set" value="3">
+			<requirement name="CVarCompare" target="self" cvar="maxHealthIncrease" operation="Equals" value="3"/> </triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthIncrease" operation="set" value="4">
+			<requirement name="CVarCompare" target="self" cvar="maxHealthIncrease" operation="Equals" value="4"/> </triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medicalHealthAmount" operation="add" value="60"/> 
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="healthIncrease" operation="set" value="5">
+			<requirement name="CVarCompare" target="self" cvar="healthIncrease" operation="Equals" value="5"/> </triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="healthIncrease" operation="set" value="6">
+			<requirement name="CVarCompare" target="self" cvar="healthIncrease" operation="Equals" value="6"/> </triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="healthIncrease" operation="set" value="8">
+			<requirement name="CVarCompare" target="self" cvar="healthIncrease" operation="Equals" value="8"/> </triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffInjuryBleeding"/>
+	</effect_group>
+	<!-- splint -->
+	<effect_group name="Primary Action" tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffLegSplinted">
+			<requirement name="HasBuff" target="self" buff="buffLegBroken"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffArmSplinted">
+			<requirement name="HasBuff" target="self" buff="buffArmBroken"/>
+		</triggered_effect>
+	</effect_group>
+	<effect_group name="Secondary Action" tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="buffLegSplinted">
+			<requirement name="HasBuff" target="other" buff="buffLegBroken"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="buffArmSplinted">
+			<requirement name="HasBuff" target="other" buff="buffArmBroken"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+	
+</append>
+</configs>

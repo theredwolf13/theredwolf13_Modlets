@@ -1,0 +1,1 @@
+medicalFirstAidBandageSplintDesc,items,Medical,,"Helps heal wounds and restore max health with left click. Also heals a broken arm or leg with right click.".,,,,

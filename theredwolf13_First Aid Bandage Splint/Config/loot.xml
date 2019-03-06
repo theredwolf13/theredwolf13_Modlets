@@ -1,0 +1,63 @@
+<configs>
+
+<append xpath="/lootcontainers/lootcontainer[@id='7']"> <!-- Medicine Cabinets -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='9']"> <!-- Backpacks -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='19']"> <!-- cars-->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='34']"> <!-- Supply Crate General-->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='36']"> <!-- Suitcase -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='43']"> <!-- Lockers -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='48']"> <!-- purse -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='51']"> <!-- pop n pills -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='54']"> <!-- shopping cart -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='58']"> <!-- shopping basket -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='70']"> <!-- regular zombies -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='71']"> <!-- strong zombies -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='106']"> <!-- cntPillCase -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='107']"> <!-- cntMedicLootPile -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='114']"> <!-- medicalPile -->
+<item name="medicalFirstAidBandageSplint" count="1" prob="0.5"/>
+</append>
+
+</configs>

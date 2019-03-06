@@ -1,0 +1,18 @@
+<configs>
+
+<append xpath="/recipes">
+	
+<recipe name="medicalFirstAidBandageSplint" count="1" tags="learnable">
+	<ingredient name="medicalBandage" count="2"/>
+	<ingredient name="medicalAloeCream" count="2"/>
+	<ingredient name="resourceWood" count="4"/>
+</recipe>
+
+<recipe name="medicalFirstAidBandageSplint" count="1" tags="learnable">
+	<ingredient name="medicalFirstAidBandage" count="2"/>
+	<ingredient name="resourceWood" count="4"/>
+</recipe>
+
+</append>
+
+</configs>
