@@ -1,0 +1,12 @@
+<configs>
+
+<append xpath="/recipes">
+	
+<recipe name="medicalFirstAidBandage" count="1" tags="learnable" >
+	<ingredient name="medicalBandage" count="1"/>
+	<ingredient name="medicalAloeCream" count="1"/>
+</recipe>
+	
+</append>
+
+</configs>
