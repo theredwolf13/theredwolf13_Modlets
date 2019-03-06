@@ -21,8 +21,4 @@
 	<set xpath="/traders/trader_info[@id='5']/@reset_interval">1</set>
 	<set xpath="/traders/trader_info[@id='5']/@allow_sell">true</set>
 	
-<append xpath="/traders/trader_item_group[@name='stashOnlyItemsHigh']">
-	<item name="cntVendingMachineTrader"/>
-</append>
-	
 </config>
