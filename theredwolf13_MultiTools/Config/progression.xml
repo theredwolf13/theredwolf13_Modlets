@@ -1,0 +1,9 @@
+<configs>
+
+<append xpath="/progression/perks/perk[@name='perkHammerForge']/effect_group/passive_effect[@level='2,5']/@tags">,AxePickShovel</append>
+
+<append xpath="/progression/perks/perk[@name='perkHammerForge']/effect_group/passive_effect[@level='2,5']/@tags">,WrenchHammer</append>
+
+<append xpath="/progression/perks/perk[@name='perkHammerForge']/effect_group/passive_effect[@level='2,5']/@tags">,MacheteShears</append>
+
+</configs>

@@ -1,0 +1,87 @@
+<configs>
+
+<append xpath="/lootcontainers/lootcontainer[@id='19']"> <!-- cars-->
+<item name="AxePickShovel" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='22']"> <!-- garage-->
+<item name="AxePickShovel" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='53']"> <!-- working stiffs-->
+<item name="AxePickShovel" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='70']"> <!-- regular zombies-->
+<item name="AxePickShovel" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='71']"> <!-- strong zombies-->
+<item name="AxePickShovel" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='88']"> <!-- construction-->
+<item name="AxePickShovel" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='92']"> <!-- cntCollapsedWorkbench-->
+<item name="AxePickShovel" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='19']"> <!-- cars-->
+<item name="WrenchHammer" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='22']"> <!-- garage-->
+<item name="WrenchHammer" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='53']"> <!-- working stiffs-->
+<item name="WrenchHammer" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='70']"> <!-- regular zombies-->
+<item name="WrenchHammer" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='71']"> <!-- strong zombies-->
+<item name="WrenchHammer" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='88']"> <!-- construction-->
+<item name="WrenchHammer" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='92']"> <!-- cntCollapsedWorkbench-->
+<item name="WrenchHammer" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='19']"> <!-- cars-->
+<item name="MacheteShears" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='22']"> <!-- garage-->
+<item name="MacheteShears" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='53']"> <!-- working stiffs-->
+<item name="MacheteShears" count="1" prob="0.5"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='70']"> <!-- regular zombies-->
+<item name="MacheteShears" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='71']"> <!-- strong zombies-->
+<item name="MacheteShears" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='88']"> <!-- construction-->
+<item name="MacheteShears" count="1" prob="0.05"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='92']"> <!-- cntCollapsedWorkbench-->
+<item name="MacheteShears" count="1" prob="0.05"/>
+</append>
+
+</configs>

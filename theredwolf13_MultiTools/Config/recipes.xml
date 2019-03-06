@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+<append xpath="/recipes">
+
+<recipe name="AxePickShovel" count="1" tags="learnable">
+	<ingredient name="meleeToolFireaxeIron" count="1"/>
+	<ingredient name="meleeToolPickaxeIron" count="1"/>
+	<ingredient name="meleeToolShovelIron" count="1"/>
+</recipe>
+		
+<recipe name="MacheteShears" count="1" tags="learnable">
+	<ingredient name="resourceYuccaFibers" count="10"/>
+	<ingredient name="meleeToolHuntingKnife" count="1"/>
+</recipe>
+		
+<recipe name="WrenchHammer" count="1" tags="learnable">
+	<ingredient name="meleeToolWrench" count="1"/>
+	<ingredient name="meleeToolClawHammer" count="1"/>
+</recipe>
+		
+</append>
+</configs>
