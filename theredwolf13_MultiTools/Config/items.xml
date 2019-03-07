@@ -4,6 +4,7 @@
 
 <item name="AxePickShovel">
 	<property name="CustomIcon" value="meleeToolFireaxeIron"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
 	<property name="Tags" value="knife,melee,medium,tool,shovel,perkDeepCuts,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="17"/>
@@ -70,6 +71,7 @@
 
 <item name="WrenchHammer">
 	<property name="CustomIcon" value="meleeToolWrench"/>
+	<property name="CustomIconTint" value="ffa0a0"/>
 	<property name="Tags" value="blunt,melee,hammer,light,tool,perkStayDown,perkSalvageOperations"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="29"/>
@@ -122,6 +124,7 @@
 
 <item name="MacheteShears">
     <property name="CustomIcon" value="meleeToolMachete" />
+	<property name="CustomIconTint" value="ffa0a0"/>
 	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="47"/>
