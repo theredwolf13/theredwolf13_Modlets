@@ -1,0 +1,7 @@
+<configs>
+
+<append xpath="/quests/quest[@id='challenge_imalumberjackandimokay']/requirement">
+		<requirement type="Holding" id="AxePickShovel"/>
+	
+</append>
+</configs>
