@@ -3,8 +3,9 @@
 <append xpath="/items">
 	
 <item name="medicalFirstAidBandageSplint">
+	<property name="Tags" value="medical"/>
 	<property name="CustomIcon" value="medicalFirstAidBandage"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
+	<!--<property name="CustomIconTint" value="ffa0a0"/>-->
 	<property name="DisplayType" value="medical"/>
 	<property name="HoldType" value="16"/>
 	<property name="Meshfile" value="Items/Health/gauze"/>
@@ -12,9 +13,11 @@
 	<property name="Material" value="Mcloth"/>
 	<property name="FuelValue" value="50"/>
 	<property name="Weight" value="10"/>
-	<property name="Group" value="Science,Basics"/>
+	<property name="Group" value="Science,Medical,Basics"/>
+	<property name="DescriptionKey" value="medicalFirstAidBandageSplintDesc"/>
 	<property name="EconomicValue" value="50"/>
 	<property name="Stacknumber" value="30000"/>
+	<property name="UnlockedBy" value="perkPhysician"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="CraftingIngredientExp" value="5"/>
@@ -37,10 +40,20 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="maxHealthIncrease" operation="set" value="@medicPerkIncrease"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="medicalHealthAmount" operation="add" value="60"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="healthIncrease" operation="set" value="@healthPerkIncrease"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value="3"/> <!-- X -->
+		<display_value name="dhealAbrasionMult" value="3"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInjuryAbrasionTreated">
+			<requirement name="HasBuff" buff="buffInjuryAbrasion"/></triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="60"/> <!-- X -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="@medicRegHealthIncreaseSpeed"/>
 		<display_value name="foodHealthAmount" value="60" />
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffInjuryBleeding"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryBleeding"/><display_value name="dStopsBleeding" value="1"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffInjuryBleeding"/>
 		<!-- used on other -->
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="healAbrasionMult" operation="set" value="3"/> <!-- X -->
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medicalRegHealthAmount" operation="add" value="60"/> <!-- X -->
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthAmount" operation="add" value="50"/> 
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="maxHealthIncrease" operation="set" value="2.50">
 			<requirement name="CVarCompare" target="self" cvar="maxHealthIncrease" operation="Equals" value="2.50"/> </triggered_effect>
