@@ -1,1 +1,3 @@
-medicalFirstAidBandageSplintDesc,items,Medical,,"Helps heal wounds and restore max health with left click. Also heals a broken arm or leg with right click.".,,,,
+  Key,File,Type,UsedInMainMenu,NoTranslate,english
+medicalFirstAidBandageSplint,items,Medical,,,Bandage Splint Combo,,
+medicalFirstAidBandageSplintDesc,items,Medical,,,"Helps heal wounds and restore max health with left click. Can also heal a broken limb."
